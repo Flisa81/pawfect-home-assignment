@@ -1,0 +1,2 @@
+import {defineConfig} from 'vite';import {resolve} from 'node:path';
+export default defineConfig({build:{rollupOptions:{input:{home:resolve(import.meta.dirname,'index.html'),detail:resolve(import.meta.dirname,'pet/index.html'),create:resolve(import.meta.dirname,'pet/create.html'),edit:resolve(import.meta.dirname,'pet/edit.html'),login:resolve(import.meta.dirname,'account/login.html'),register:resolve(import.meta.dirname,'account/register.html')}}}});

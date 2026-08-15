@@ -1,0 +1,4 @@
+import {getPets} from './api.js';import {mountChrome,petCard,escapeHtml} from './ui.js';mountChrome();
+const grid=document.querySelector('#pet-grid'),count=document.querySelector('#result-count'),empty=document.querySelector('#empty');let pets=[];
+function render(){const q=document.querySelector('#search').value.trim().toLowerCase(),species=document.querySelector('#species').value,size=document.querySelector('#size').value;const shown=pets.filter(p=>(!q||[p.name,p.breed,p.location].some(v=>v.toLowerCase().includes(q)))&&(!species||p.species===species)&&(!size||p.size===size));grid.innerHTML=shown.map(petCard).join('');count.textContent=`${shown.length} ${shown.length===1?'friend':'friends'} found`;empty.hidden=shown.length>0}
+document.querySelector('#filters').addEventListener('input',render);getPets().then(data=>{pets=data;render()}).catch(e=>{grid.innerHTML=`<p class="error">${escapeHtml(e.message)}</p>`});
