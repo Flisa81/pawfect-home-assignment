@@ -1,1 +1,65 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Find your new best friend through Pawfect Home."><title>Pawfect Home — Adopt a friend</title><link rel="preconnect" href="https://images.unsplash.com"><link rel="stylesheet" href="/src/styles.css"><script src="/config.js"></script></head><body><a class="skip" href="#main">Skip to content</a><header id="site-header"></header><main id="main"><section class="hero"><div><span class="eyebrow">A home changes everything</span><h1>Meet the one who’s been waiting for you.</h1><p>Browse pets from trusted local carers and give a deserving animal their next chapter.</p><a class="button" href="#pets">Find a friend <span aria-hidden="true">→</span></a></div><div class="hero-art"><img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=900&q=85" alt="Happy golden retriever outdoors"><span class="hero-note">1,200+ happy adoptions</span></div></section><section class="browse" id="pets"><div class="section-heading"><div><span class="eyebrow">Waiting for you</span><h2>Find your perfect companion</h2></div><p id="result-count" aria-live="polite"></p></div><form class="filters" id="filters" role="search"><label class="search"><span class="sr-only">Search pets</span><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search by name, breed or location"></label><label><span class="sr-only">Species</span><select id="species"><option value="">All species</option><option>Dog</option><option>Cat</option><option>Rabbit</option></select></label><label><span class="sr-only">Size</span><select id="size"><option value="">All sizes</option><option>Small</option><option>Medium</option><option>Large</option></select></label></form><div id="pet-grid" class="pet-grid" aria-live="polite"></div><div id="empty" class="empty" hidden><div>🐾</div><h3>No pets found</h3><p>Try changing your search or filters.</p></div></section><section class="cta"><div><span class="eyebrow light">Ready to help?</span><h2>Every adoption makes room for another rescue.</h2></div><a class="button button-light" href="#pets">Browse pets</a></section></main><footer id="site-footer"></footer><script type="module" src="/src/app.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Find your new best friend through Pawfect Home.">
+    <title>Pawfect Home — Adopt a friend</title>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="stylesheet" href="/src/styles.css">
+    <script src="/config.js"></script>
+</head>
+
+<body><a class="skip" href="#main">Skip to content</a>
+    <header id="site-header"></header>
+    <main id="main">
+        <section class="hero">
+            <div><span class="eyebrow">A home changes everything</span>
+                <h1>Meet the one who’s been waiting for you.</h1>
+                <p>Browse pets from trusted local carers and give a deserving animal their next chapter.</p><a
+                    class="button" href="#pets">Find a friend <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="hero-art"><img
+                    src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=900&q=85"
+                    alt="Happy golden retriever outdoors"><span class="hero-note">1,200+ happy adoptions</span></div>
+        </section>
+        <section class="browse" id="pets">
+            <div class="section-heading">
+                <div><span class="eyebrow">Waiting for you</span>
+                    <h2>Find your perfect companion</h2>
+                </div>
+                <p id="result-count" aria-live="polite"></p>
+            </div>
+            <form class="filters" id="filters" role="search"><label class="search"><span class="sr-only">Search
+                        pets</span><span aria-hidden="true">⌕</span><input id="search" type="search"
+                        placeholder="Search by name, breed or location"></label><label><span
+                        class="sr-only">Species</span><select id="species">
+                        <option value="">All species</option>
+                        <option>Dog</option>
+                        <option>Cat</option>
+                        <option>Rabbit</option>
+                    </select></label><label><span class="sr-only">Size</span><select id="size">
+                        <option value="">All sizes</option>
+                        <option>Small</option>
+                        <option>Medium</option>
+                        <option>Large</option>
+                    </select></label></form>
+            <div id="pet-grid" class="pet-grid" aria-live="polite"></div>
+            <div id="empty" class="empty" hidden>
+                <div>🐾</div>
+                <h3>No pets found</h3>
+                <p>Try changing your search or filters.</p>
+            </div>
+        </section>
+        <section class="cta" id="about">
+            <div><span class="eyebrow light">Ready to help?</span>
+                <h2>Every adoption makes room for another rescue.</h2>
+            </div><a class="button button-light" href="#pets">Browse pets</a>
+        </section>
+    </main>
+    <footer id="site-footer"></footer>
+    <script type="module" src="/src/app.js"></script>
+</body>
+
+</html>
