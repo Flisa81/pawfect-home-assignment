@@ -2,6 +2,39 @@
 
 A responsive pet-adoption web application built from the supplied `/pets` and `/auth` API contract. Visitors can browse, search, filter, open shareable pet profiles, copy links, and contact a rescue. Authenticated admins can create, edit, and delete listings.
 
+## Author
+
+**Name:** Felicia Francina Baptiste
+**Course:** Project Exam 2 – Resit 1 Brief
+**Project:** Pet Adoption Web Application
+**Delivery date:** 16 August 2026
+
+## Links
+
+* [Live website](https://splendid-dieffenbachia-acac49.netlify.app/)
+* [GitHub repository](https://github.com/Flisa81/pawfect-home-assignment)
+* [GitHub Project / Kanban](https://github.com/users/Flisa81/projects/12/views/1)
+* [Figma design and prototype](https://www.figma.com/design/6nmAy1gEstXUTMg50RNZPS/Pawfect-Home-%E2%80%93-Design-System---Prototype?node-id=0-1)
+
+## Project overview
+
+Pawfect Home was created for a pet-adoption organisation. Its goal is to make it easy for visitors to discover adoptable animals and view detailed pet profiles.
+
+The application also provides an administrative area where registered users can create, update and delete pet listings.
+
+## Design
+
+The visual identity uses a warm and trustworthy style intended to support the emotional nature of pet adoption.
+
+- **Primary colour:** Forest green `#345B4C`
+- **Secondary colour:** Coral `#E98064`
+- **Background colour:** Cream `#FAF7F0`
+- **Heading font:** Fraunces
+- **Body font:** DM Sans
+
+The Figma file includes a style guide, reusable components and high-fidelity desktop and mobile designs.
+
+
 ## Highlights
 
 - Responsive multi-page experience for mobile and desktop
@@ -73,5 +106,3 @@ Run `npm run build` and publish `dist`. For a repository subpath, add Vite's `ba
 - `docs/PROJECT_PLAN.md` — ready-to-import Kanban backlog and delivery roadmap
 - `docs/TESTING.md` — manual user-story, accessibility, validation, and Lighthouse checklist
 - `docs/API_CONTRACT.md` — endpoint and payload mapping
-
-The supplied source contained an unrelated venue/booking schema after the pet requirements. It is intentionally excluded from this project.
